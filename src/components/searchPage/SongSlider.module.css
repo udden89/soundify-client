@@ -1,0 +1,54 @@
+
+.songSliderContainer{  
+  max-height: 300px;
+  margin: 3rem 0 6rem 0;  
+}
+
+.songSliderContainer h1{  
+  margin-bottom: 2rem;
+}
+.cardsContainer{
+  display: flex;
+  flex-direction: column;
+    gap: 1rem;
+}
+
+.songCard{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-left: 4px solid var(--color-primary-orange);
+  padding-left: 1rem;
+}
+
+.songCard:hover{
+  cursor: pointer;
+}
+
+.songCard .songTitle{
+  color: var(--color-primary);    
+}
+
+.cardsContainer figure {  
+  position: relative;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.2rem solid var(--color-primary-light);
+  filter: brightness(1.4);
+  justify-self: center;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.play {
+  position: absolute;
+  font-size: 1.5rem;
+  color: var(--color-primary-light);
+  justify-self: center;
+  align-self: center;
+}
+

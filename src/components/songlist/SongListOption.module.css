@@ -1,0 +1,19 @@
+.container {
+  grid-column: 4/5;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+
+  position: relative;
+}
+
+.options {
+  cursor: pointer;
+  display: grid;
+
+  width: 1rem;
+  height: 80%;
+
+  color: var(--color-primary-light);
+  font-size: 2rem;
+}

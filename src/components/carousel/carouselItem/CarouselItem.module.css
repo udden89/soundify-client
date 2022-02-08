@@ -1,0 +1,14 @@
+.figure {
+  display: grid;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.img {
+  justify-self: center;
+  object-fit: cover;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary-orange);
+}

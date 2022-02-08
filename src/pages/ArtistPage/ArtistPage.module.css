@@ -1,0 +1,44 @@
+.artistpage {
+	display: grid;
+	grid-template-columns: var(--grid-col-setup);
+	grid-template-rows: minmax(auto, 20rem) auto repeat(1, 1fr);
+
+	height: 100%;
+	width: 100%;
+	row-gap: var(--row-gap);
+}
+
+.description {
+	grid-column: 2/8;
+	color: var(--color-primary);
+}
+
+.text {
+	overflow: hidden;
+	height: 10rem;
+	transition: all 0.2s;
+}
+
+.button {
+	background: none;
+	border: none;
+	padding-top: 1rem;
+	border-bottom: 2px solid var(--color-primary-light);
+	cursor: pointer;
+}
+
+.songs {
+	grid-column: 2/8;
+	width: 100%;
+}
+
+.symbol {
+	flex: 1;
+	margin-left: 20px;
+	font-size: 2rem;
+}
+
+.titleIconContainer {
+	display: flex;
+	justify-content: space-between;
+}

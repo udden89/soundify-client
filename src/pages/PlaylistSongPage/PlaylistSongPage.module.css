@@ -1,0 +1,15 @@
+.header {
+  padding: 1rem 0;
+  font-size: 2.6rem;
+  color: var(--color-primary);
+}
+
+.container {
+  padding: 1rem;
+}
+
+.noSongs {
+  text-align: center;
+  color: var(--color-primary);
+  margin-top: 15rem;
+}

@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-primary);
+  width: 100%;
+  margin-top: 2rem;
+}
+.container h1 {
+  color: var(--color-primary-light);
+}
+
+.searchInput {
+  height: 6rem;
+  border-radius: 4rem;
+  padding-left: 6.5rem;
+  font-size: 1.5rem;
+  margin: 2rem 0 2rem 0;
+  border: 1px solid var(--color-primary);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 2rem 0;
+}
+
+.albumCard {
+  width: 49%;
+  height: 8rem;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid var(--color-primary-orange);
+}
+
+.icon {
+  background: url('../../assets/icons/searchOrange.png') no-repeat 15px 12px;
+  background-size: 3.5rem;
+}
+

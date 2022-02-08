@@ -1,0 +1,136 @@
+.container {
+  width: 0;
+  height: 0;
+}
+
+.firstRow {
+  grid-row: 1/2;
+}
+
+.playerContainer {
+  position: fixed;
+  top: calc(100vh - 85px);
+  left: 50%;
+  z-index: 1000;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 15rem;
+  grid-template-rows: 4fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  border: 1px solid var(--color-primary-silver);
+  padding: 0 1.5rem;
+  padding-top: 1rem;
+
+  height: 85px;
+  width: 100%;
+  max-width: 500px;
+  transform: translate(-50%, 0);
+  background-color: var(--color-primary-light);
+  transition: all 0.2s ease-in-out;
+}
+
+.buttonContainer {
+  grid-row: 1/2;
+  grid-column: 3/4;
+
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+
+  justify-self: center;
+  align-self: center;
+}
+
+.next {
+  cursor: pointer;
+  font-size: 2rem;
+  width: 4rem;
+  background: none;
+  border: none;
+  color: var(--color-primary-silver);
+}
+
+.songContent {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  justify-content: center;
+  align-items: center;
+
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 12rem;
+}
+
+.songContainer {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: max-content;
+}
+
+.artistName {
+  font-size: 1.8rem;
+}
+
+.songName {
+  color: var(--color-primary-silver);
+}
+
+.img {
+  object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+}
+
+.progressBar {
+  width: 100%;
+  background-color: var(--color-primary-floor);
+  margin: 0 10px;
+  border-radius: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.progressBarDone {
+  width: 0;
+  background-color: var(--color-primary-orange);
+  border-radius: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.progressContainer {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  position: absolute;
+  bottom: 3px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hide {
+  cursor: pointer;
+  position: absolute;
+  top: -2rem;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: 2rem;
+  width: 5rem;
+  background-color: var(--color-primary-orange);
+  color: var(--color-primary-silver);
+  border-top: 2px solid var(--color-primary);
+  border-left: 2px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
+
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}

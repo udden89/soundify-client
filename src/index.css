@@ -1,0 +1,77 @@
+:root {
+  --default-font-size: 1.6rem;
+
+  --color-html-bg: gray;
+  --color-bg-white: #fff;
+
+  --color-primary: #252422;
+  --color-primary-light: #403d39;
+  --color-primary-silver: #ccc5b9;
+  --color-primary-floor: #fffcf2;
+  --color-primary-orange: #eb5e28;
+
+  --grid-col-setup: 0.2fr repeat(6, 1fr) 0.2fr;
+  --grid-row-setup: minmax(min-content, 25rem) minmax(min-content, 11rem)
+    repeat(2, 1fr);
+  --row-gap: 2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--color-html-bg);
+  font-size: 62.5%; /* 10px */
+  display: grid;
+  justify-content: center;
+  align-self: center;
+}
+
+body {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+
+  font-family: 'Arial';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  max-width: 500px;
+  min-height: 100vh;
+  background-color: var(--color-bg-white);
+  color: var(--color-primary-floor);
+}
+
+main {
+  background-color: var(--color-bg-white);
+  height: calc(100% - 7rem);
+  padding: 1.5rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.loader {
+  border: 8px solid var(--color-primary-light); /* Light grey */
+  border-top: 8px solid var(--color-primary-orange); /* Blue */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  align-self: center;
+  margin-top: 30%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

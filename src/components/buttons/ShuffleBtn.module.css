@@ -1,0 +1,9 @@
+.shufflebtn {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  color: var(--color-primary);
+  font-size: 3rem;
+}

@@ -1,0 +1,79 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  justify-content: center;
+}
+
+.submitBtn {
+  width: 30rem;
+  background-color: #eb5e28;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.formContainer input {
+  height: 4rem;
+  border-radius: 30px;
+  border: 1px solid rgb(26, 26, 26);
+  margin-bottom: 2rem;
+  text-indent: 15px;
+}
+
+.formContainer input :focus-visible {
+  border: 1px solid #eb5e28;
+}
+
+.header_signup {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 3rem 0;
+  color: #353535;
+}
+
+.formContainer h3 {
+  color: #353535;
+}
+
+.signup_label {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  color: #353535;
+}
+
+.formContainer a {
+  font-weight: bold;
+}
+
+.iconBar {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.icons {
+  color: #353535;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid rgb(42, 42, 42);
+}
+
+.login {
+  margin-top: 2rem;
+}

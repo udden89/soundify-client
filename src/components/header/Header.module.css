@@ -1,0 +1,61 @@
+.header {
+	grid-row: 1/2;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	align-items: center;
+
+	background-color: var(--color-primary);
+
+	height: auto;
+	width: 100%;
+}
+
+.img {
+	grid-column: 2 /3;
+	cursor: pointer;
+}
+
+.hamburgerContainer {
+	grid-column: 1/2;
+	justify-self: flex-start;
+	display: grid;
+	align-items: center;
+	margin-left: 2rem;
+	height: 2.5rem;
+	cursor: pointer;
+}
+
+.hamburger {
+	border: none;
+	border-radius: 0;
+
+	background-color: #fff;
+	height: 0.2rem;
+	width: 2rem;
+}
+
+.hamburger::before,
+.hamburger::after {
+	background-color: #fff;
+	height: 0.2rem;
+	width: 2rem;
+	content: '';
+	display: block;
+}
+
+.hamburger::before {
+	transform: translateY(-1rem);
+}
+.hamburger::after {
+	transform: translateY(0.7rem);
+}
+
+.searchIcon {
+	justify-self: flex-end;
+	margin-right: 2rem;
+}
+
+.searchIcon i {
+	font-size: 2rem;
+}

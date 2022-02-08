@@ -1,0 +1,97 @@
+.overlay {
+  position: fixed;
+  width: 0%;
+  max-width: 500px;
+  height: 100%;
+  top: 0;
+
+  background-color: rgba(34, 34, 34, 0.753);
+
+  z-index: 1001;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 200px;
+
+  transition: all 0.4s;
+  z-index: 1002;
+
+  display: grid;
+  grid-template-rows: 10rem 1fr 2fr 10rem;
+  overflow: hidden;
+
+  background-color: var(--color-primary);
+  color: var(--color-primary-floor);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1frw;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-primary-light);
+  border-bottom: 2px solid var(--color-primary-orange);
+}
+
+.profilePic {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.listContainer {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.listItem i {
+  margin-right: 1.5rem;
+}
+
+.listItem:first-child {
+  margin-top: 1rem;
+}
+
+.socialBar {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  padding: 0 2rem;
+  grid-row: 4/5;
+}
+
+.symbol {
+  font-size: 2rem;
+}
